@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<link rel="stylesheet" href="./calculators.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body >
+<div class="container   text-center bg-black mt-3" style="border-radius:25px ; height: 364px; width:254px;" >
+    <div class="row">
+        <div class="col-12">
+            <input id="result" type="text" >
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-3"><button  onclick="allclear()" id="button1" type="submit" class="btn  btn-sm w-100"><span class="text">C</span></button></div>
+        <div class="col-3"><button onclick="display('%')" id="button1" type="submit" class="btn  btn-sm w-100"><span class="text">%</span></button></div>
+        <div class="col-3"><button  onclick="display('+')"id="button1" type="submit" class="btn  btn-sm w-100"><span class="text">+</span></button></div>
+        <div class="col-3"><button  onclick="display('-')"id="button1" type="submit" class="btn  btn-sm w-100"><span class="text">-</span></button></div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-3"><button onclick="display(1)" id="button1" type="submit" class="btn  btn-sm w-100" style="background-color: orange;"><span class="text">1</span></button></div>
+        <div class="col-3"><button onclick="display(2)" id="button1"type="submit" class="btn  btn-sm w-100" style="background-color: orange;"><span class="text">2</span></button></div>
+        <div class="col-3"><button onclick="display(3)" id="button1" type="submit" class="btn  btn-sm w-100" style="background-color: orange;"><span class="text">3</span></button></div>
+        <div class="col-3"><button onclick="display('*')" id="button1"type="submit" class="btn  btn-sm w-100" ><span class="text">*</span></button></div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-3"><button onclick="display(4)" id="button1" type="submit" class="btn  btn-sm w-100" style="background-color: orange;"><span class="text">4</span></button></div>
+        <div class="col-3"><button onclick="display(5)" id="button1" type="submit" class="btn  btn-sm w-100" style="background-color: orange;"><span class="text">5</span></button></div>
+        <div class="col-3"><button onclick="display(6)" id="button1" type="submit" class="btn  btn-sm w-100" style="background-color: orange;"><span class="text">6</span></button></div>
+        <div class="col-3"><button onclick="display('.')" id="button1" type="submit" class="btn  btn-sm w-100"><span class="text">.</span></button></div>
+    </div>
+    <div class="row mt-3"> 
+        <div class="col-3"><button onclick="display(7)" id="button1" type="submit" class="btn  btn-sm w-100" style="background-color: orange;"><span class="text">7</span></button></div>
+        <div class="col-3"><button  onclick="display(8)"id="button1"type="submit" class="btn  btn-sm w-100" style="background-color: orange;"><span class="text">8</span></button></div>
+        <div class="col-3"><button onclick="display(9)" id="button1" type="submit" class="btn  btn-sm w-100" style="background-color: orange;"><span class="text">9</span></button></div>
+        <div class="col-3"><button onclick="display('/')"id="button1" type="submit" class="btn  btn-sm w-100"><span class="text">/</span></button></div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-3"><button onclick="display(0)" id="button1" type="submit" class="btn  btn-sm w-100" style="background-color: orange;"><span class="text">0</span></button></div>
+        <div class="col-3"><button onclick="display(',')" id="button1" type="submit" class="btn  btn-sm w-100" style="background-color: orange;"><span class="text">,</span></button></div>
+        <div class="col-3"><button onclick="evaluateexp()" id="button1" type="submit" class="btn  btn-sm w-100" style="background-color: orange;"><span class="text">=</span></button></div>
+        <div class="col-3"><button onclick="removeelement()" id="button1" type="submit" class="btn  btn-sm w-100"><span class="text">&#9003</span></button></div>
+
+    </div>
+
+
+
+</div>
+</body>
+<script src="./calculator.js"></script>
+</html>

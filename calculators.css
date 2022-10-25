@@ -1,0 +1,15 @@
+#result{
+    border-radius: 7px;
+    margin-top: 15px;
+    height: 47px;
+    width: 225px;}
+#button1{
+    background-color: rgb(80, 80, 67);
+    border: none;
+    border-radius: 30px;
+    
+
+}
+.text{
+    font-size: 20px;
+}
